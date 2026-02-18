@@ -19,13 +19,11 @@ Password: reti2026PWD
 
 **Shutdown Steps:**
 
-Shut down properly by running the command poweroff in the terminal (or via the GUI shutdown menu if available).
+* Shut down properly by running the command poweroff in the terminal (or via the GUI shutdown menu if available).
 
-Do not use the host PC's power button, Ctrl+Alt+Del, or close the window—this can corrupt the VM.
++ Do not use the host PC's power button, Ctrl+Alt+Del, or close the window—this can corrupt the VM.
 
-Wait for the VM to power off fully, then log out of the host PC GUI.
-
-The full-screen view maximizes the console; use Ctrl+Alt or lab-specific keys to switch if needed (test during first session).
++ Wait for the VM to power off fully, then log out of the host PC GUI.
 
 Please report any login or VM startup issues to the lab supervisor as soon as possible.
 

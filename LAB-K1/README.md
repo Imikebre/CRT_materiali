@@ -6,8 +6,11 @@ NOTE WELL: If you work on the PCs in Dijkstra's room, it is advisable to always 
 
 ON DIJKSTRA PCs:
 To access the Ubuntu virtual machine (VM) in the Dykstra lab using a PC:
--At the GUI login screen, enter the complete username: completi/reti2026PWD (use this exact format, including the slash).
--Log in with the assigned password for the reti2026 course (ask the instructor or lab assistant if unknown).
+-At the GUI login screen, enter username and password as follows:
+
+Username: complreti
+Password: reti2026PWD
+
 -Once logged in, the Ubuntu VM will automatically start and display in full-screen console mode.
 -Run Docker.
 

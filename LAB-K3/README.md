@@ -22,8 +22,17 @@ hb[image]="kathara/base"
 <!---
 thus, `ha` and `hb` are connected on the same network.
 ---> 
+Note the use of the command `ha[image]="kathara/xx"` to run the Docker image for a specific type of network device. `base` is for a user PC, while `frr` is for a router.
+*  Q.: Run this lab. Look at the interfaces of each PC. What is missing? Could you ping the interface of hb from ha? Why?
+*  Q.: Suggest a proper IP address for the interfaces in the scenario. How many subnets are there? How can you assign IP interfaces and netmasks in order to minimize the amount of IP addresses used?
 
-
+Add an IP address to the interfaces of each device. Do it by configuring the proper startup file. For instance, for `ha`, create a `ha.startup` file.
+Inside, put the command for adding an ip address and netmask to a given interface (say eth0):
+```shell
+ip address add (your ip address)/(your netmask) dev eth0
+```
+<!---
+ip route add default via 192.168.1.128 dev eth0
 Configure `ha`. Create a `ha.startup` file:
 ```shell
 ip address add 192.168.1.1/24 dev eth0
@@ -37,12 +46,12 @@ ip address add 192.168.2.1/24 dev eth0
 
 ip route add default via 192.168.2.128 dev eth0
 ```
-
 Configure `r1`. Create a `r1.startup` file:
 ```shell
 ip address add 192.168.1.128/24 dev eth0
 ip address add 192.168.2.128/24 dev eth1
 ```
+---> 
 Run the lab through `kathara lstart` and test connectivity and performance
 
   * **Q1.1** Through `ip address`, report the IP address for all the interfaces (excluded the local loop).
@@ -55,9 +64,22 @@ Run the lab through `kathara lstart` and test connectivity and performance
     |---             |---      |---        |
     | ...            |         |           |
 
-  * **Q1.4** Through `ping` with a single ICMP packet, report the output of the connectivity test between: `ha-r1`, `hb-R1`, `ha-hb`.
+  * **Q1.4** Through `ping` with a single ICMP packet, report the output of the connectivity test between: `ha-r1`, `hb-R1`, `ha-hb`. Is the network well configured?
+    What is missing?
 
+Implement the required changes. Restart the lab. Go again through Q1.1-1.4. Is the network properly configured now?
+  
   * **Q1.5** Through `traceroute`, report the output of the route `ha->hb` and of the route `hb->ha`. Are the same? Why?
+
+# iPerf3 Overview
+
+**iPerf3** is an open-source tool for measuring maximum TCP, UDP, or SCTP bandwidth on IP networks, reporting throughput, loss, and jitter between two endpoints. [iperf](https://iperf.fr)
+
+## Basic Usage (Client-Server Model)
+- **Server**: `iperf3 -s` (listens on port 5201).
+- **Client**: `iperf3 -c <server_IP>` (client-to-server, 10s test).
+- **Reverse**: `iperf3 -c <server_IP> -R` (server-to-client).
+- **UDP**: Add `-u`; bandwidth `-b 10M`.
 
   * **Q1.6** Through `iperf3`, report the average bandwidth between `ha` and `hb`. Recall that `iperf3 -s` runs as server and `iperf3 -c X.X.X.X` runs as client sending the traffic towards `X.X.X.X`. 
 

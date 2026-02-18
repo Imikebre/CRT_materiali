@@ -66,7 +66,7 @@ Consider the topology below.
 ![Net1](Figs/net1.drawio.png)
 
 
-**Q2.1** Choose a proper addressing plan in order to minimize the waste of IP addresses, within the range 10.M.0.0/16, where M is your matricola modulo 100. Assume that at most 1000 hosts could be connected to each network *neta1* and *netbB*. Fill the following table.
+  * **Q2.1** Choose a proper addressing plan in order to minimize the waste of IP addresses, within the range 10.M.0.0/16, where M is your matricola modulo 100. Assume that at most 1000 hosts could be connected to each network *neta1* and *netbB*. Fill the following table.
 
 
 | Network | Network address|
@@ -84,13 +84,14 @@ Consider the topology below.
 | r21 | |
 | r2b | |
 
-**Q2.2** Configure the routing tables for each device. Fill the following table.
+  * **Q2.2** Configure the routing tables for each device. Fill the following table.
 
 | Network prefix | Gateway | Interface |
 |---|---|---|
 |  ... |  |  |
 
-**Q2.3** Show the routing path `ha->hb` and `hb->ha` through `traceroute`.
+Implement the scenario on Kathara, by creating the necessary files. Run the scenario.
+  * **Q2.3** Show the routing path `ha->hb` and `hb->ha` through `traceroute`. Check that the implemented configuration is the one intended.
 
 ## 3. Routing in a loop topology
 

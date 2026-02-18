@@ -49,7 +49,9 @@ Run the lab through `kathara lstart` and test connectivity and performance
 
   * **Q1.3** Report the three routing tables according to the following scheme:
   | Network prefix | Gateway | Interface |
+
   |---|---|---|
+
   | ... |   |   |
 
 

@@ -20,7 +20,7 @@ hb[0]="B"
 hb[image]="kathara/base"
 ```
 %%% thus, `ha` and `hb` are connected on the same network.
-
+[TODO]: # (Review this section before submission.)
 
 Configure `ha`. Create a `ha.startup` file:
 ```shell

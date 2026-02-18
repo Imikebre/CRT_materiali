@@ -13,11 +13,11 @@ To access the Ubuntu virtual machine (VM) in the Dykstra lab using a PC:
 Username: complreti
 Password: reti2026PWD
 
--Once logged in, the Ubuntu VM will automatically start and display in full-screen console mode.
+* Item Once logged in, the Ubuntu VM will automatically start and display in full-screen console mode.
 
--Run Docker.
+*item Run Docker.
 
-[Shutdown Steps:]
+**Shutdown Steps:**
 
 Shut down properly by running the command poweroff in the terminal (or via the GUI shutdown menu if available).
 

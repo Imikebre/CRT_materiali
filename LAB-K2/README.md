@@ -23,6 +23,8 @@ ON A PC IN DIJKSTRA:
 >The folders related to the official repository labs of Kathara are available under the local `Kathara-Labs` folder on the VM. 
 All the activities for the class labs are instead available under the  local `Datacenter-Lab-CE` folder, in order to simplify the copy&paste actions. All the folder references present in the following text refer to such a local folder.
 
+## First steps
+
 0. Open a terminal and change the folder `cd Datacenter-lab-CE`. Update the lab activity with `git pull`.
 
 1. Type `kathara check` from the command line and check that the message `Container run successfully` appears. 

@@ -4,7 +4,7 @@ The aim of this lab is (i) to learn the basic usage of [Kathara](https://www.kat
 
 ON YOUR DEVICE:
 
-0. Download and install Kathara'. Follow instructions on.
+0. Download and install Kathara'. Follow instructions on [Intro to Kathara'](https://github.com/compl-reti-unito/25-26/blob/main/Theory_slides/001-kathara-introduction.pdf)
 
 If installing on Debian 12/13, here are the commands (after installing Docker) that should install Kathara (resolved with Gemini):
 ```shell

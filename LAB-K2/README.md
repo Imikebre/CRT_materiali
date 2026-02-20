@@ -5,9 +5,9 @@ The aim of this lab is (i) to learn the basic usage of [Kathara](https://www.kat
 ON YOUR DEVICE:
 
 0. Download and install Kathara'. Follow instructions on.
-```shell
-If installing on Debian 12/13, here are the commands (after installing Docker) that should install Kathara (resolved with Gemini):
 
+If installing on Debian 12/13, here are the commands (after installing Docker) that should install Kathara (resolved with Gemini):
+```shell
 text
 echo "deb [trusted=yes] http://ppa.launchpad.net/katharaframework/kathara/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/kathara.list  
   

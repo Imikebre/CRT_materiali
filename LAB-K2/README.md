@@ -26,7 +26,7 @@ All the activities for the class labs are instead available under the  local `Da
 0. Open a terminal and change the folder `cd Datacenter-lab-CE`. Update the lab activity with `git pull`.
 
 1. Type `kathara check` from the command line and check that the message `Container run successfully` appears. 
-2. Read carefully the slides in the folder `LAB-K2/K2-intro/001-kathara-introduction.pdf`
+2. Read carefully the slides in the [Intro to Kathara'](https://github.com/compl-reti-unito/25-26/blob/main/Theory_slides/001-kathara-introduction.pdf)
    * Change the default Docker image (sl. 15) by running `kathara settings`
    * Test Kathara (sl. 22)
    * Understand the meaning of ``kathara lstart``, ``kathara lclean``, ``kathara lrestart``, ``kathara linfo``, `kathara list`, `kathara wipe` commands

@@ -64,7 +64,7 @@ Run the lab through `kathara lstart` and test connectivity and performance
     |---             |---      |---        |
     | ...            |         |           |
 
-  * **Q1.4** Through `ping` with a single ICMP packet, report the output of the connectivity test between: `ha-r1`, `hb-R1`, `ha-hb`. Is the network well configured?
+  * **Q1.4** Through `ping` with a single ICMP packet, report the output of the connectivity test between: `ha-r1`, `hb-r1`, `ha-hb`. Is the network well configured?
     What is missing?
 
 Implement the required changes. Restart the lab. Go again through Q1.1-1.4. Is the network properly configured now?
